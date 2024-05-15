@@ -5148,14 +5148,7 @@ meow@^4.0.0:
     redent "^2.0.0"
     trim-newlines "^2.0.0"
 
-merge-options@0.0.64:
-  version "0.0.64"
-  resolved "https://registry.yarnpkg.com/merge-options/-/merge-options-0.0.64.tgz#cbe04f594a6985eaf27f7f8f0b2a3acf6f9d562d"
-  integrity sha512-5ZCbF86zeKknQJoGnOlGLBL6ltW8NK0AjI10p7HCMvwFij5KymKJCElM/5mzJ3+zSgQRdjIdyi2NucWTUA4xoA==
-  dependencies:
-    is-plain-obj "^1.1.0"
-
-merge-options@1.0.1:
+merge-options@1.0.1, merge-options@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/merge-options/-/merge-options-1.0.1.tgz#2a64b24457becd4e4dc608283247e94ce589aa32"
   integrity sha512-iuPV41VWKWBIOpBsjoxjDZw8/GbSfZ2mk7N1453bwMrfzdrIk7EzBd+8UVR6rkw67th7xnk9Dytl3J+lHPdxvg==
@@ -5398,6 +5391,11 @@ mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
   integrity sha512-r65nCZhrbXXb6dXOACihYApHw2Q6pV0M3V0PSxd74N0+D8nzAdEAITq2oAjA1jVnKI+tGvEBUpqiMh0+rW6zDQ==
+
+nanoid@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.7.tgz#d0c301a691bc8d54efa0a2226ccf3fe2fd656bd8"
+  integrity sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==
 
 nanomatch@^1.2.1, nanomatch@^1.2.9:
   version "1.2.13"
@@ -6024,6 +6022,11 @@ performance-now@^2.1.0:
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha512-7EAHlyLHI56VEIdK57uwHdHKIaAGbnXPiw0yWbarQZOKaKpvUIgW0jWRVLiatnM+XXlSwsanIBH/hzGMJulMow==
 
+picocolors@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.1.tgz#a8ad579b571952f0e5d25892de5445bcfe25aaa1"
+  integrity sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==
+
 picomatch@^2.0.4:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
@@ -6357,7 +6360,7 @@ postcss-zindex@^2.0.1:
     postcss "^5.0.4"
     uniqs "^2.0.0"
 
-postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.2, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8, postcss@^5.2.16, postcss@^5.2.17:
+postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.2, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8, postcss@^5.2.16:
   version "5.2.18"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.18.tgz#badfa1497d46244f6390f58b319830d9107853c5"
   integrity sha512-zrUjRRe1bpXKsX1qAJNJjqZViErVuyEkMTRrwu4ud4sbTtIBRmtaYDrHmcGgmrbsW3MHfmtIf+vJumgQn+PrXg==
@@ -6375,6 +6378,15 @@ postcss@^6.0.1, postcss@^6.0.21:
     chalk "^2.4.1"
     source-map "^0.6.1"
     supports-color "^5.4.0"
+
+postcss@^8.4.38:
+  version "8.4.38"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.38.tgz#b387d533baf2054288e337066d81c6bee9db9e0e"
+  integrity sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==
+  dependencies:
+    nanoid "^3.3.7"
+    picocolors "^1.0.0"
+    source-map-js "^1.2.0"
 
 posthtml-match-helper@^1.0.1:
   version "1.0.4"
@@ -6396,17 +6408,10 @@ posthtml-parser@^0.4.1:
   dependencies:
     htmlparser2 "^3.9.2"
 
-posthtml-rename-id@^1.0:
+posthtml-rename-id@^1.0, posthtml-rename-id@^1.0.4:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/posthtml-rename-id/-/posthtml-rename-id-1.0.12.tgz#cf7f6eb37146bf1afac31e68f18c6cc19ae61433"
   integrity sha512-UKXf9OF/no8WZo9edRzvuMenb6AD5hDLzIepJW+a4oJT+T/Lx7vfMYWT4aWlGNQh0WMhnUx1ipN9OkZ9q+ddEw==
-  dependencies:
-    escape-string-regexp "1.0.5"
-
-posthtml-rename-id@^1.1.0-alpha.10475b37:
-  version "1.1.0-alpha.10475b37"
-  resolved "https://registry.yarnpkg.com/posthtml-rename-id/-/posthtml-rename-id-1.1.0-alpha.10475b37.tgz#96a531a1dd8708d58cfbfc7a92fedd491a7e61b8"
-  integrity sha512-+8NzhpJQIsfwKMRmvRwCIq023q/3CRm+++uK/CbJTBmgGKWlI5ZbIQl8S69aCzhEavDBCcoAyTtOFTMq0hYcgg==
   dependencies:
     escape-string-regexp "1.0.5"
 
@@ -6441,7 +6446,7 @@ posthtml@^0.9.2:
     posthtml-parser "^0.2.0"
     posthtml-render "^1.0.5"
 
-postsvg@^2.2.0-alpha.10475b37:
+postsvg@^2.1.2:
   version "2.2.7"
   resolved "https://registry.yarnpkg.com/postsvg/-/postsvg-2.2.7.tgz#b345488cec971dcd17dd330b2e613542285940cb"
   integrity sha512-TyRnoyEvszrEGOzxaTycnUgJZ0W2Xnd9fOmgfuy61Qjo6JhDPhAIBQ1dspQCvdVpK9KkIlZkSETSjmbO0gVIag==
@@ -7395,6 +7400,11 @@ source-list-map@^2.0.0:
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
   integrity sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==
 
+source-map-js@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.0.tgz#16b809c162517b5b8c3e7dcd315a2a5c2612b2af"
+  integrity sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==
+
 source-map-resolve@^0.5.0:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/source-map-resolve/-/source-map-resolve-0.5.3.tgz#190866bece7553e1f8f267a2ee82c606b5509a1a"
@@ -7763,19 +7773,36 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-svg-baker-runtime@^1.4.7:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/svg-baker-runtime/-/svg-baker-runtime-1.4.7.tgz#f4720637f5b6202eef6378d81f1fead0815f8a4e"
-  integrity sha512-Zorfwwj5+lWjk/oxwSMsRdS2sPQQdTmmsvaSpzU+i9ZWi3zugHLt6VckWfnswphQP0LmOel3nggpF5nETbt6xw==
+"svg-baker-runtime@https://github.com/MasonTModea/svg-baker-runtime.git#59557483207d96d20171c724e3463cd2256f63f1":
+  version "1.4.6"
+  resolved "https://github.com/MasonTModea/svg-baker-runtime.git#59557483207d96d20171c724e3463cd2256f63f1"
   dependencies:
     deepmerge "1.3.2"
     mitt "1.1.2"
-    svg-baker "^1.7.0"
+    svg-baker "^2.0.2-alpha.0"
 
-svg-baker@^1.7.0:
+svg-baker@^2.0.2-alpha.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/svg-baker/-/svg-baker-2.0.2.tgz#128203178ed6553400dc0d268835e49cf476b7c7"
+  integrity sha512-44Ba25SK9rIK+RvNcaJhzCsmeP4HNHPdM6dTGVe55K4VLrsSWuVv4xPEJrfYAwuxgGbCohlhebbJwyFoewacLw==
+  dependencies:
+    bluebird "^3.5.0"
+    fs-extra "^5.0.0"
+    glob-all "^3.1.0"
+    he "^1.1.1"
+    merge-options "^1.0.0"
+    micromatch "3.1.0"
+    postcss "^6.0.21"
+    postcss-prefix-selector "^1.6.0"
+    posthtml-rename-id "^1.0.4"
+    postsvg "^2.1.2"
+    query-string "^6.0.0"
+    traverse "^0.6.6"
+    url-slug "^2.0.0"
+
+"svg-baker@https://github.com/MasonTModea/svg-baker.git#7f45ffdaf2b586aed467baebb79c3539921c62bf":
   version "1.7.0"
-  resolved "https://registry.yarnpkg.com/svg-baker/-/svg-baker-1.7.0.tgz#8367f78d875550c52fe4756f7303d5c5d7c2e9a7"
-  integrity sha512-nibslMbkXOIkqKVrfcncwha45f97fGuAOn1G99YwnwTj8kF9YiM6XexPcUso97NxOm6GsP0SIvYVIosBis1xLg==
+  resolved "https://github.com/MasonTModea/svg-baker.git#7f45ffdaf2b586aed467baebb79c3539921c62bf"
   dependencies:
     bluebird "^3.5.0"
     clone "^2.1.1"
@@ -7784,32 +7811,12 @@ svg-baker@^1.7.0:
     loader-utils "^1.1.0"
     merge-options "1.0.1"
     micromatch "3.1.0"
-    postcss "^5.2.17"
+    postcss "^8.4.38"
     postcss-prefix-selector "^1.6.0"
     posthtml-rename-id "^1.0"
     posthtml-svg-mode "^1.0.3"
     query-string "^4.3.2"
     traverse "^0.6.6"
-
-svg-baker@^2.1.0-alpha.10475b37:
-  version "2.1.0-alpha.10475b37"
-  resolved "https://registry.yarnpkg.com/svg-baker/-/svg-baker-2.1.0-alpha.10475b37.tgz#cb30e8aa075947761ff4dc324b78c23dca4c4645"
-  integrity sha512-N0fhXbvmcUytk+S6jE/YSXdjYW84clh4IKBDamRBpxhb2bmdRI9GrMph1jBQ5PVgBn6Yz9hVD02rBqLRltKWaw==
-  dependencies:
-    bluebird "^3.5.0"
-    fs-extra "^5.0.0"
-    glob-all "^3.1.0"
-    he "^1.1.1"
-    image-size "^0.5.1"
-    merge-options "0.0.64"
-    micromatch "3.1.0"
-    postcss "^6.0.21"
-    postcss-prefix-selector "^1.6.0"
-    posthtml-rename-id "^1.1.0-alpha.10475b37"
-    postsvg "^2.2.0-alpha.10475b37"
-    query-string "^6.0.0"
-    traverse "^0.6.6"
-    url-slug "^2.0.0"
 
 svgo-loader@^1.2.1:
   version "1.2.1"
