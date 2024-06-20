@@ -37,7 +37,7 @@
     "escape-string-regexp": "1.0.5",
     "loader-utils": "^1.1.0",
     "svg-baker": "https://github.com/MasonTModea/svg-baker.git#fbe8d003e69fb2599d91d8fa883f8a11c29ca829",
-    "svg-baker-runtime": "https://github.com/MasonTModea/svg-baker-runtime.git#58f6b8008aeb4d6d45cf08a44412c7cf4013c815",
+    "svg-baker-runtime": "https://github.com/MasonTModea/svg-baker-runtime.git#7396292f741f8f76c4caf7ee850dd187c894208a",
     "url-slug": "2.0.0"
   },
   "devDependencies": {
